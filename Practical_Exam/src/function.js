@@ -142,6 +142,16 @@ const getJohnfullname = (pUsers) => {
 //-------------------------------------------------
 
 /* Question 9  - Start  */
+const getaverageoftheStudentsCourses =(pUsers) =>{
+    pUsers.forEach((user) =>{
+        if (user.jobType==="Student") {
+            const calculated =user.courses.reduce((total,course)=> total+course.score, 0)
+            const average = calculated/user.courses.length;
+            user.average=average;
+            
+        }
+    })
+}
 
 //TODO:Write your code here
 
@@ -164,5 +174,6 @@ export {
   over25YearsOldinSwitzerland,
   getfulNameundAge,
   getJohnfullname,
-  studentsWithParentsIncomeOver20000,
+  soruYedi,
+  getaverageoftheStudentsCourses
 };

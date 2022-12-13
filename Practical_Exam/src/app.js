@@ -203,7 +203,11 @@
  * 
 */
 import { users } from "./data.js";
-import { getfulNmaneundAge, getTotalTeachers } from "./function.js";
+import {
+  getaverageoftheStudentsCourses,
+  getfulNmaneundAge,
+  getTotalTeachers,
+} from "./function.js";
 import { getTotalStudents } from "./function.js";
 import { getTotalManagers } from "./function.js";
 import { getTotalnameOfPeopleinSwitzerland } from "./function.js";
@@ -211,7 +215,8 @@ import { getfullnamejobTypeAgeDateOfEntryCountry } from "./function.js";
 import { over25YearsOldinSwitzerland } from "./function.js";
 import { getfulNameundAge } from "./function.js";
 import { getJohnfullname } from "./function.js";
-import { studentsWithParentsIncomeOver20000 } from "./function.js";
+import { soruYedi } from "./function.js";
+import { getaverageoftheStudentsCourses } from "./function.js";
 
 /* console.log should be here  */
 //console.log("console log should be here");
@@ -223,4 +228,5 @@ import { studentsWithParentsIncomeOver20000 } from "./function.js";
 //console.log(over25YearsOldinSwitzerland(users));
 //console.log(getfulNameundAge(users));
 console.log(getJohnfullname(users));
-console.log(studentsWithParentsIncomeOver20000(users));
+console.log(soruYedi(users));
+console.log(getaverageoftheStudentsCourses(users));

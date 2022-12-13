@@ -67,7 +67,7 @@ const over25YearsOldinSwitzerland = (pUsers) => {
 
 //TODO:Write your code here
 const getfulNameundAge = (pUsers) => {
-    let newArray = [];
+  let newArray = [];
   fullname: fullname.split("");
   age: user.age;
 };
@@ -81,9 +81,21 @@ newArray.push(user);
 /* Question 6  - Start  */
 
 //TODO:Write your code here
-const newEmail = (pUsers) =>{
-    
-}
+const newemail = [
+  {
+    fullname: "John Doe",
+  },
+  {
+    fullname: "David Anderson",
+  },
+];
+
+users.forEach((user) => {
+  const [firstname, lastname] = user.fullname.split(" ");
+
+  const email = `${lastname}.${firstname}@hicoders.ch`;
+  user.email = email;
+});
 
 /* Question 6  -  End  */
 
@@ -100,9 +112,9 @@ const newEmail = (pUsers) =>{
 /* Question 8  - Start  */
 
 //TODO:Write your code here
-const getJohnfullname = (pUsers) =>{
-  return  pUsers.filter((user)=> user.fullname.includes("John"));
-}
+const getJohnfullname = (pUsers) => {
+  return pUsers.filter((user) => user.fullname.includes("John"));
+};
 
 /* Question 8  -  End  */
 

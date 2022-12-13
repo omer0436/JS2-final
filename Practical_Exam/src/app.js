@@ -211,15 +211,16 @@ import { getfullnamejobTypeAgeDateOfEntryCountry } from "./function.js";
 import { over25YearsOldinSwitzerland } from "./function.js";
 import { getfulNameundAge } from "./function.js";
 import { getJohnfullname } from "./function.js";
-import {} from "./function.js";
+import { studentsWithParentsIncomeOver20000 } from "./function.js";
 
 /* console.log should be here  */
 //console.log("console log should be here");
 // console.log(getTotalStudents(users));
-// console.log(getTotalTeachers(users));
+// console.log(getTotalTeachers(users));git
 // console.log(getTotalManagers(users));
 //console.log(getTotalnameOfPeopleinSwitzerland(users));
 //console.log(getfullnamejobTypeAgeDateOfEntryCountry(users));
 //console.log(over25YearsOldinSwitzerland(users));
 //console.log(getfulNameundAge(users));
 console.log(getJohnfullname(users));
+console.log(studentsWithParentsIncomeOver20000(users));

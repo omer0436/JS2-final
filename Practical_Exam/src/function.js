@@ -104,7 +104,28 @@ users.forEach((user) => {
 /* Question 7  - Start  */
 
 //TODO:Write your code here
-
+const soruYedi = [
+    {
+      
+      parents: {
+        address: {
+          city: "Zurich"
+        },
+        income: 40000
+      }
+    },
+  ];
+  
+  const studentsInZurich = users.filter((user) => {
+    return user.jobType === "Student" && user.parents.address.city === "Zurich";
+  });
+  
+  const studentsWithParentsIncomeOver20000 = studentsInZurich.filter((student) => {
+    return student.parents.income > 20000;
+  });
+  
+  
+  
 /* Question 7  -  End  */
 
 //-------------------------------------------------
@@ -143,4 +164,5 @@ export {
   over25YearsOldinSwitzerland,
   getfulNameundAge,
   getJohnfullname,
+  studentsWithParentsIncomeOver20000,
 };
